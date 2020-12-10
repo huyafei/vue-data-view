@@ -1,0 +1,22 @@
+$vm_base: 1920;
+$vh_base: 1080;
+@function vw($px) {
+  @return ($px / $vm_base) * 100vw;
+}
+
+@function vh($px) {
+  @return ($px / $vh_base) * 100vh;
+}
+
+@mixin background($url){
+  &{
+    background: url($url);
+    background-size:100% 100%;
+  }
+}
+@mixin font($s,$c:null){
+  &{
+    font-size:$s ;
+    color: $c;
+  }
+}

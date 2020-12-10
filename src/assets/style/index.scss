@@ -1,0 +1,12 @@
+@import "colors";
+@import "mixin";
+
+.main{
+  width: 100%;
+  min-width: 1366px;
+  height: 1080px;
+  overflow: hidden;
+}
+.main-content{
+  height: 100%;
+}
